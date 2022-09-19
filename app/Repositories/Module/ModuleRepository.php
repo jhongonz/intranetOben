@@ -15,6 +15,9 @@ class ModuleRepository extends BaseRepository
      */
     const MODEL = Module::class;
 
+    /** @var atring */
+    const STATUS_FIELD = 'mod_status';
+
     /** @return Collection|null */
     public function getFathers(): ?Collection
     {

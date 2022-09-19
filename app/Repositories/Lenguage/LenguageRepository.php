@@ -13,6 +13,9 @@ class LenguageRepository extends BaseRepository
      */
     const MODEL = Lenguage::class;
 
+    /** @var atring */
+    const STATUS_FIELD = 'len_status';
+
     /** @return Collection|null */
     public function getAll(?string $code = null): ?Collection
     {
