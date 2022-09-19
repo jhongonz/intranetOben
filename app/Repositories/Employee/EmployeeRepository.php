@@ -17,6 +17,9 @@ class EmployeeRepository extends BaseRepository
      */
     const MODEL = Employee::class;
 
+    /** @var atring */
+    const STATUS_FIELD = 'emp_status';
+
     /**
      * @param Employee $employee
      * @param Request $request;

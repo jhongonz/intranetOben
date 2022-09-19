@@ -14,4 +14,7 @@ class PrivilegesRepository extends BaseRepository
      * Associated Repository Model
      */
     const MODEL = Privilege::class;
+
+    /** @var atring */
+    const STATUS_FIELD = 'pri_status';
 }
