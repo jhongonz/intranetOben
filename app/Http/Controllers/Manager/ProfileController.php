@@ -18,11 +18,12 @@ class ProfileController extends Controller
      */
     public function index(): string|JsonResponse
     {
-        $view = view('manager.profile.index')->render();
+        $view = view('manager.profile.index')
+            ->with('as','asd')
+            ->render();
 
-        //dd($view);
         if (request()->ajax()) {
-			return response()->json(['status'=>STATUS_OK,'html'=>(string)$view]);
+			return response()->json(['status'=>STATUS_OK,'html'=>$view]);
 		} else {
 			return $view;
 		}
