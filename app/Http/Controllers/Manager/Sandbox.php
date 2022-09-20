@@ -15,7 +15,6 @@ class Sandbox extends Controller
         $this->userRepository = $userRepository;
     }
 
-
     public function index()
     {
         $contact = new \stdClass();
