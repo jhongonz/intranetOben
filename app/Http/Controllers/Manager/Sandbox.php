@@ -15,7 +15,29 @@ class Sandbox extends Controller
         $this->userRepository = $userRepository;
     }
 
-    public function index ()
+
+    public function index()
+    {
+        $contact = new \stdClass();
+        $contact->name = 'test';
+        $contact->email = 'algo@algo.com';
+        $contact->telefono = '4234234';
+        $contact->country = 'asdasd';
+        $contact->city = 'sfsdf';
+
+        $html = new \App\Mail\Sustainability\Formcontact($contact);
+
+        try {
+
+            \Mail::to(['jhonnygonzalezf@gmail.com'])->bcc(['jgonzalez@creasoftweb.com'])->send($html);
+
+        } catch (\Exception $e) {
+
+            \Log::error('No se ha enviado el reporte, error '.$e->getCode().' | '.$e->getMessage());
+        }
+    }
+
+    public function __index()
     {
         //$user = $this->userRepository->getByEmailWithEmployee('jgonzalez@creasoftweb.com');
         $user = $this->userRepository->getAll();

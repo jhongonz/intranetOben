@@ -29,5 +29,6 @@
 <!--end::Post-->
 
 @push('javascript')
-<script src="{{ asset('storage/statics/js/menu/action.js') }}"></script>
+<script src="storage/statics/js/menu/action.js"></script>
+<script src="storage/statics/js/profile/action.js"></script>
 @endPush
