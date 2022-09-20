@@ -79,3 +79,7 @@
 </div>
 <!--end::Tables Widget 13-->
 @endsection
+
+@pushIf( ($layout == 'manager.layouts.content') ,'javascript-custom')
+    <script src="{{ asset('storage/statics/js/profile/action.js') }}"></script>
+@endPushIf

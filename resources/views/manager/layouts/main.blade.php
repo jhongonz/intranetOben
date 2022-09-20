@@ -229,6 +229,7 @@
         </script>
 		<!--end::Custom Javascript-->
         @stack('javascript')
+        @yield('javascript-content')
 		<!--end::Javascript-->
 	</body>
 	<!--end::Body-->

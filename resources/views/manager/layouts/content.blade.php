@@ -28,6 +28,11 @@
 </div>
 <!--end::Post-->
 
+@section('javascript-content')
+    @stack('javascript-custom')
+@show
+
 @push('javascript')
 <script src="{{ asset('storage/statics/js/menu/action.js') }}"></script>
+<script src="{{ asset('storage/statics/js/profile/action.js') }}"></script>
 @endPush
