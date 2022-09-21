@@ -14,6 +14,9 @@ class UserRepository extends BaseRepository
      */
     const MODEL = User::class;
 
+    /** @var atring */
+    const STATUS_FIELD = 'user_status';
+
     /**
      * @param string $email
      *

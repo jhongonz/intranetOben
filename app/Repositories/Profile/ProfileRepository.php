@@ -13,4 +13,7 @@ class ProfileRepository extends BaseRepository
      * Associated Repository Model
      */
     const MODEL = Profile::class;
+
+    /** @var atring */
+    const STATUS_FIELD = 'pro_status';
 }
