@@ -38,10 +38,7 @@ class Sandbox extends Controller
 
     public function __index()
     {
-        //$user = $this->userRepository->getByEmailWithEmployee('jgonzalez@creasoftweb.com');
         $user = $this->userRepository->getAll();
         dd($user);
-        #echo "Hola Mundo";
-        #return true;
     }
 }
