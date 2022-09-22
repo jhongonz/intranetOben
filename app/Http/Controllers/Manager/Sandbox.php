@@ -20,12 +20,13 @@ class Sandbox extends Controller
         $contact = new \stdClass();
         $contact->name = 'test';
         $contact->email = 'algo@algo.com';
-        $contact->telefono = '4234234';
+        $contact->message = 'asdasd';
         $contact->country = 'asdasd';
         $contact->city = 'sfsdf';
 
         $html = new \App\Mail\Sustainability\Formcontact($contact);
-
+        print_r($html->render());
+        exit();
         try {
 
             \Mail::to(['jhonnygonzalezf@gmail.com'])->bcc(['jgonzalez@creasoftweb.com'])->send($html);

@@ -19,27 +19,27 @@ class SendEmailFormcontact extends Controller
         $validator = \Validator::make($request->all(),[
             'nombre'=>'required',
             'email'=>'required|email:rfc',
-            'telefono'=>'telefono',
-            'country'=>'country',
-            'city'=>'city'
+            'country'=>'required',
+            'city'=>'required',
+            'message'=>'required'
         ]);
 
         if ($validator->fails()) {
             return response()->json(['status'=>STATUS_FAIL,'msg'=>'Faltan datos requeridos','error'=>$validator->errors()]);
         }
-
+        
         $contact = new \stdClass();
         $contact->name = $request->nombre;
         $contact->email = $request->email;
-        $contact->telefono = $request->telefono;
         $contact->country = $request->country;
         $contact->city = $request->city;
+        $contact->message = $request->message;
 
         $html = new \App\Mail\Sustainability\Formcontact($contact);
-
         try {
 
-            \Mail::to(['jhonnygonzalezf@gmail.com'])->bcc(['jgonzalez@creasoftweb.com'])->send($html);
+            \Mail::to(['sostenibilidad@obengroup.com', 'mylenejansen@obengroup.com', 'maritamendoza@obengroup.com'])->send($html);
+            return response()->json(['status'=>0,'msg'=>'Correo enviado con exito']);
 
         } catch (\Exception $e) {
 
