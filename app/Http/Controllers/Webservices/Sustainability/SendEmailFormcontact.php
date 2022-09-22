@@ -27,7 +27,7 @@ class SendEmailFormcontact extends Controller
         if ($validator->fails()) {
             return response()->json(['status'=>STATUS_FAIL,'msg'=>'Faltan datos requeridos','error'=>$validator->errors()]);
         }
-        
+
         $contact = new \stdClass();
         $contact->name = $request->nombre;
         $contact->email = $request->email;
@@ -39,9 +39,12 @@ class SendEmailFormcontact extends Controller
         try {
 
             \Mail::to(['sostenibilidad@obengroup.com', 'mylenejansen@obengroup.com', 'maritamendoza@obengroup.com'])->send($html);
-            return response()->json(['status'=>0,'msg'=>'Correo enviado con exito']);
+
+            return response()->json(['status'=>WS_STATUS_OK,'msg'=>'Correo enviado con exito']);
 
         } catch (\Exception $e) {
+
+            return response()->json(['status'=>WS_STATUS_FAIL,'msg'=>'No se ha podido enviar el correo']);
 
             \Log::error('No se ha enviado el reporte, error '.$e->getCode().' | '.$e->getMessage());
         }
