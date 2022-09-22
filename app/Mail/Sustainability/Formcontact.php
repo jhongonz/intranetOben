@@ -33,7 +33,6 @@ class Formcontact extends Mailable
             ->from('sostenibilidad@obengroup.com', 'Sostenibilidad ObenGroup')
             ->view('emails.sustainability.formcontact')
             ->with('contact', $this->contact);
-
         return $view;
     }
 }
