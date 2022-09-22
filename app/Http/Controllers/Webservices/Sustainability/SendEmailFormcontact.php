@@ -38,7 +38,7 @@ class SendEmailFormcontact extends Controller
         $html = new \App\Mail\Sustainability\Formcontact($contact);
         try {
 
-            \Mail::to(['sostenibilidad@obengroup.com', 'Mylenejansen@obengroup.com', 'maritamendoza@obengroup.com'])->send($html);
+            \Mail::to(['sostenibilidad@obengroup.com', 'mylenejansen@obengroup.com', 'maritamendoza@obengroup.com'])->send($html);
             return response()->json(['status'=>0,'msg'=>'Correo enviado con exito']);
 
         } catch (\Exception $e) {
