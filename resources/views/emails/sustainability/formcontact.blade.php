@@ -82,7 +82,7 @@
         <td align="center" valign="top">
            <table width="640" cellspacing="0" cellpadding="0" border="0" style="background-color: white;"> <!-- HEADER CONTENT --> <tr> <td align="center" valign="top" style="background:rgba(255,255,0,0);" width="640px"> <table class="container" cellpadding="0" cellspacing="0" width="600"> <tr> <td align="center" style="font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 11px; color: #959595; padding:10px 25px 25px 0px;">Si no visualizas correctamente este email, por favor ingresa <a href="https://obengroupsustainability.com/public/mail/mailcontact.html"  target="_blank" style="font-size:11px; color: #959595; text-decoration: none;"><b>aqu&iacute;</b></a><br><br>Para asegurar la entrega de nuestras comunicaciones en su correo, por favor agregue<b> <br>sostenibilidad@obengroup.com
 </b> a su libreta de direcciones de correo. </td> </tr> </table> </td> </tr> </table>
-    
+
         </td>
       </tr>
       <tr>
@@ -160,7 +160,7 @@ td {
       <td align="center" style="border: none;"><table cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
           <td height="15"></td>
-        </tr>  
+        </tr>
         <tr>
             <td align="center"><p style="text-align: justify; margin-top: 0px; margin-bottom: 0px; text-align: left; width:85%;"><span style="margin-left: 20px;font-size: 22px;font-family: arial;color: #707070">Hola, equipo ObenGroup.</span></p></td>
           </tr>
@@ -168,8 +168,8 @@ td {
             <td height="15"></td>
           </tr>
           <tr>
-            <td align="center"><p style="text-align: justify; margin-top: 0px; margin-bottom: 0px; text-align: left; width:85%;"><span style="margin-left: 17px;font-size: 16px;font-family: arial;color: #707070">Se ha registrado un cliente potencial, el cual solicita información.</span></p></td>
-          </tr>  
+            <td align="center"><p style="text-align: justify; margin-top: 0px; margin-bottom: 0px; text-align: left; width:85%;"><span style="margin-left: 17px;font-size: 16px;font-family: arial;color: #707070">"Tienes un nuevo mensaje del formulario de RSE". Debería decir eso en vez de "se ha registrado un cliente potencial el cual solicita información.</span></p></td>
+          </tr>
           <tr>
             <td height="15"></td>
           </tr>
@@ -183,13 +183,13 @@ td {
     </tr>
     <tr>
       <td align="center"><p style="text-align: justify; margin-top: 0px; margin-bottom: 0px; text-align: left;width:85%;"><span style="font-size: 25px;font-family: arial;color: #707070; font-weight: 700;margin-left: 17px;">Detalles del cliente</span></p></td>
-    </tr> 
+    </tr>
     <tr>
       <td height="20"></td>
     </tr>
     <tr>
       <td align="center"><p style="text-align: justify; margin-top: 0px; margin-bottom: 0px; text-align: left;width:85%;"><span style="margin-left: 40px;font-size: 18px;font-family: arial;color: #707070">Nombre: {{ $contact->name }}</span></p></td>
-    </tr> 
+    </tr>
     <tr>
       <td height="20"></td>
     </tr>
@@ -227,7 +227,7 @@ td {
     </tr>
     <tr>
       <td align="center" width="90%" ><p style=" margin-left: 20px; width:85%; text-align: left; margin-top: 0px; margin-bottom: 0px; text-align: left"><span style="font-size: 18px;font-family: arial;color: #707070;">Considerar organizar la reunión bajo las plataformas Google Meet o Microsoft Teams.</span></p></td>
-    </tr> 
+    </tr>
     <tr>
       <td height="35" style="line-height: 30px"></td>
     </tr>
@@ -278,7 +278,7 @@ td {
   </table></div>
 
 </td></tr></table>
-												  
+
                                                 </td>
                                               </tr>
                                               </tbody>
